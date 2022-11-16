@@ -23,6 +23,12 @@ class Student {
         return !classes.isEmpty() && gpa >= 0.0 && gpa <= 5.0 && name != null && name.length() >0;
     }
 
+    public static void showAllElements (ArrayList<String> sa) {
+        for (String s : sa) {
+            System.out.println("-"+s);
+        }
+    }
+
     //public static String asText(Student s) {
     //    return "Name:"+s.name+" GPA:"+s.gpa;
     //}
